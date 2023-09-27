@@ -1,0 +1,86 @@
+body{margin: 0;width: 100%;height: 100%;}
+h3{margin: 0}
+.setting{
+    position: absolute;
+    padding: 10px;
+    width: 250px;
+    line-height: 21px;
+    z-index: 999;
+}
+.setting label:before,.setting label:after{
+    display:inline-block;
+    transform: translateY(-7px);
+}
+.setting label[for]:before{content: '-360deg'}
+.setting label[for]:after{ content:  '360deg'}
+.setting input{text-align: center;}
+.container{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 400px;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 2s ease;
+}
+.face{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0,0,0,.4);
+    border:1px solid #000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+}
+.face:nth-child(1){transform: rotateX(0deg) translateZ(100px);background-color: rgba(0,0,0,.4);}
+.face:nth-child(2){transform: rotateX(180deg) translateZ(100px);}
+.face:nth-child(3){transform: rotateX(90deg) translateZ(100px);}
+.face:nth-child(4){transform: rotateX(-90deg) translateZ(100px);}
+.face:nth-child(5){transform: rotateY(90deg) translateZ(100px);}
+.face:nth-child(6){transform: rotateY(-90deg) translateZ(100px);}
+
+.xBar, .yBar, .zBar{
+    position: absolute;
+    top: 50%;left: 50%;
+    height: 1px;
+    width: 200%;
+    font-size: 1.5em;
+    text-align: right;
+    padding-right: 10px;
+    background-color: #000;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+}
+.xBar{transform: translate(-50%, -50%) rotateY(0deg);}
+.yBar{transform: translate(-50%, -50%) rotateZ(90deg);}
+.zBar{transform: translate(-50%, -50%) rotateY(-90deg);}
+
+.xBar:before, .yBar:before, .zBar:before{
+    content: '';
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    height: 1px;
+    transform: rotateX(90deg);
+    background-color: #000;
+}
+.xBar:after, .yBar:after, .zBar:after{
+    content: '';
+    position: absolute;
+    top:-8px;right:-16px;
+    border-width:8px;
+    border-style:solid;
+    border-color: transparent transparent transparent #000;
+}
+
+.savol li {
+    margin-bottom: 4px;
+    font-size: 20px;
+}

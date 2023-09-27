@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>"Qora quti" metodi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background-image: url('./fon.jpg'); background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,245,255,1) 0%, rgba(7,213,248,1) 19%, rgba(0,212,255,1) 100%);">
+<div class="setting">
+    <h3>X o'qi bo'yicha aylantirish</h3>
+    <label for="rx">
+        <input type="range" name="rx" id="rx" min="-360" max="360" value="0"/>
+    </label>
+    <label><input type="number" name="tx" id="tx" min="-360" max="360" value="0"/>　deg</label>
+    <h3>Y o'qi bo'yicha aylantirish</h3>
+    <label for="ry">
+        <input type="range" name="ry" id="ry" min="-360" max="360" value="0"/>
+    </label>
+    <label><input type="number" name="ty" id="ty" min="-360" max="360" value="0"/>　deg</label>
+    <h3>Z o'qi bo'yicha aylantirish</h3>
+    <label for="rz">
+        <input type="range" name="rz" id="rz" min="-360" max="360" value="0"/>
+    </label>
+    <label><input type="number" name="tz" id="tz" min="-360" max="360" value="0"/>　deg</label>
+
+</div>
+
+
+<div class="container" style="margin-top: 120px">
+
+    <div class="box">
+        <div class="face a" onclick="aFunc(a, false)">a</div>
+        <div class="face b" onclick="aFunc(b, true)">q</div>
+        <div class="face c" onclick="aFunc(c, false)">c</div>
+        <div class="face d" onclick="aFunc(d, false)">d</div>
+        <div class="face e" onclick="aFunc(e, false)">e</div>
+        <div class="face f" onclick="aFunc(f, false)">f</div>
+        <div class="xBar">x</div>
+        <div class="yBar">y</div>
+        <div class="zBar">z</div>
+    </div>
+</div>
+
+<div style="display: inline-block; margin: 10px 300px 0 400px;">
+    <h2 style="font-size: 48px;">2. O'lchash deb nimaga aytiladi?</h2>
+    <ol type="a" class="savol">
+        <li>
+            O‘lchash deb, shunday solishtirish ya‘ni eksperiment yordamida, xuddi shu turdagi, birlik sifatida qabul qilingan miqdori
+            bilan o‘zaro solishtiriladi.
+        </li>
+        <li>
+            O‘lchash deb, shunday solishtirish, anglash, aniqlash jarayoniga aytiladiki, unda o‘lchanadigan kattalik
+            fizikaviy tajriba, ya‘ni eksperiment yordamida, xuddi shu turdagi, birlik sifatida qabul qilingan miqdori
+            bilan o‘zaro solishtiriladi.
+        </li>
+        <li>
+            O‘lchash – bu solishtirish eksperimentini o‘tkazish jarayonidir (solishtirish qanday usulda bo‘lmasin).
+        </li>
+        <li>
+            O‘lchash – bu fizik eksperimentning aniq, ma’lum struktura, o‘lchash vositalari va eksperiment o‘tkazishning aniq yo‘li, algoritmi yordamida bajarilish, amalga oshirilish usulidir.
+        </li>
+        <li>
+            O‘lchash – o‘lchanayotgan kattalikning son qiymatini o‘lchash birligiga ko‘paytmasi tariqasida ifodalanadi:
+        </li>
+        <li>
+            O‘lchash – o‘lchanayotgan kattalikni o‘lchov orqali yaratilgan kattalik bilan taqqoslash (solishtirish)dir.
+        </li>
+    </ol>
+</div>
+<div style="display: flex; justify-content: space-between;">
+    <div></div>
+    <div style="padding-right: 100px; margin-top: 450px; font-size: 48px;">
+        <a href="./index.html" style="color: black;">
+            <--
+        </a>
+    </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
